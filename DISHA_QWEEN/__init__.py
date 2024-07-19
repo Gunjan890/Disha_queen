@@ -1,4 +1,4 @@
-from DISHA_QWEEN.core.bot import PURVI
+from DISHA_QWEEN.core.bot import DISHA
 from DISHA_QWEEN.core.dir import dirr
 from DISHA_QWEEN.core.git import git
 from DISHA_QWEEN.core.userbot import Userbot
