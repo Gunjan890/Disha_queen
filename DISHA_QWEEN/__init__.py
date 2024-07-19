@@ -1,8 +1,8 @@
-from PURVIMUSIC.core.bot import PURVI
-from PURVIMUSIC.core.dir import dirr
-from PURVIMUSIC.core.git import git
-from PURVIMUSIC.core.userbot import Userbot
-from PURVIMUSIC.misc import dbb, heroku
+from DISHA_QWEEN.core.bot import PURVI
+from DISHA_QWEEN.core.dir import dirr
+from DISHA_QWEEN.core.git import git
+from DISHA_QWEEN.core.userbot import Userbot
+from DISHA_QWEEN.misc import dbb, heroku
 
 from SafoneAPI import SafoneAPI
 from .logging import LOGGER
@@ -12,7 +12,7 @@ git()
 dbb()
 heroku()
 
-app = PURVI()
+app = DISHA()
 api = SafoneAPI()
 userbot = Userbot()
 
