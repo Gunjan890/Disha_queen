@@ -2,14 +2,14 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardMarkup, Message
 
 import config
-from PURVIMUSIC import YouTube, app
-from PURVIMUSIC.core.call import PURVI
-from PURVIMUSIC.misc import db
-from PURVIMUSIC.utils.database import get_loop
-from PURVIMUSIC.utils.decorators import AdminRightsCheck
-from PURVIMUSIC.utils.inline import close_markup, stream_markup
-from PURVIMUSIC.utils.stream.autoclear import auto_clean
-from PURVIMUSIC.utils.thumbnails import get_thumb
+from DISHA_QWEEN import YouTube, app
+from DISHA_QWEEN.core.call import DISHA
+from DISHA_QWEEN.misc import db
+from DISHA_QWEEN.utils.database import get_loop
+from DISHA_QWEEN.utils.decorators import AdminRightsCheck
+from DISHA_QWEEN.utils.inline import close_markup, stream_markup
+from DISHA_QWEEN.utils.stream.autoclear import auto_clean
+from DISHA_QWEEN.utils.thumbnails import get_thumb
 from config import BANNED_USERS
 
 
@@ -48,7 +48,7 @@ async def skip(cli, message: Message, _, chat_id):
                                         ),
                                         reply_markup=close_markup(_),
                                     )
-                                    await PURVI.stop_stream(chat_id)
+                                    await DISHA.stop_stream(chat_id)
                                 except:
                                     return
                                 break
@@ -75,7 +75,7 @@ async def skip(cli, message: Message, _, chat_id):
                     reply_markup=close_markup(_),
                 )
                 try:
-                    return await PURVI.stop_stream(chat_id)
+                    return await DISHA.stop_stream(chat_id)
                 except:
                     return
         except:
@@ -86,7 +86,7 @@ async def skip(cli, message: Message, _, chat_id):
                     ),
                     reply_markup=close_markup(_),
                 )
-                return await PURVI.stop_stream(chat_id)
+                return await DISHA.stop_stream(chat_id)
             except:
                 return
     queued = check[0]["file"]
@@ -111,7 +111,7 @@ async def skip(cli, message: Message, _, chat_id):
         except:
             image = None
         try:
-            await PURVI.skip_stream(chat_id, link, video=status, image=image)
+            await DISHA.skip_stream(chat_id, link, video=status, image=image)
         except:
             return await message.reply_text(_["call_6"])
         button = stream_markup(_, chat_id)
@@ -164,7 +164,7 @@ async def skip(cli, message: Message, _, chat_id):
         await mystic.delete()
     elif "index_" in queued:
         try:
-            await PURVI.skip_stream(chat_id, videoid, video=status)
+            await DISHA.skip_stream(chat_id, videoid, video=status)
         except:
             return await message.reply_text(_["call_6"])
         button = stream_markup(_, chat_id)
@@ -186,7 +186,7 @@ async def skip(cli, message: Message, _, chat_id):
             except:
                 image = None
         try:
-            await PURVI.skip_stream(chat_id, queued, video=status, image=image)
+            await DISHA.skip_stream(chat_id, queued, video=status, image=image)
         except:
             return await message.reply_text(_["call_6"])
         if videoid == "telegram":
