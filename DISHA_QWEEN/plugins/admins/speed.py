@@ -1,13 +1,13 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from PURVIMUSIC import app
-from PURVIMUSIC.core.call import PURVI
-from PURVIMUSIC.misc import SUDOERS, db
-from PURVIMUSIC.utils import AdminRightsCheck
-from PURVIMUSIC.utils.database import is_active_chat, is_nonadmin_chat
-from PURVIMUSIC.utils.decorators.language import languageCB
-from PURVIMUSIC.utils.inline import close_markup, speed_markup
+from DISHA_QWEEN import app
+from DISHA_QWEENC.core.call import DISHA
+from DISHA_QWEEN.misc import SUDOERS, db
+from DISHA_QWEEN.utils import AdminRightsCheck
+from DISHA_QWEEN.utils.database import is_active_chat, is_nonadmin_chat
+from DISHA_QWEEN.utils.decorators.language import languageCB
+from DISHA_QWEEN.utils.inline import close_markup, speed_markup
 from config import BANNED_USERS, adminlist
 
 checker = []
@@ -94,7 +94,7 @@ async def del_back_playlist(client, CallbackQuery, _):
         text=_["admin_32"].format(CallbackQuery.from_user.mention),
     )
     try:
-        await PURVI.speedup_stream(
+        await DISHA.speedup_stream(
             chat_id,
             file_path,
             speed,
