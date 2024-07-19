@@ -1,11 +1,11 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from PURVIMUSIC import app
-from PURVIMUSIC.core.call import PURVI
-from PURVIMUSIC.utils.database import is_music_playing, music_on
-from PURVIMUSIC.utils.decorators import AdminRightsCheck
-from PURVIMUSIC.utils.inline import close_markup
+from DISHA_QWEEN import app
+from DISHA_QWEEN.core.call import DISHA
+from DISHA_QWEEN.utils.database import is_music_playing, music_on
+from DISHA_QWEEN.utils.decorators import AdminRightsCheck
+from DISHA_QWEEN.utils.inline import close_markup
 from config import BANNED_USERS
 
 
@@ -15,7 +15,7 @@ async def resume_com(cli, message: Message, _, chat_id):
     if await is_music_playing(chat_id):
         return await message.reply_text(_["admin_3"])
     await music_on(chat_id)
-    await PURVI.resume_stream(chat_id)
+    await DISHA.resume_stream(chat_id)
     await message.reply_text(
         _["admin_4"].format(message.from_user.mention), reply_markup=close_markup(_)
     )
