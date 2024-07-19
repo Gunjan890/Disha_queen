@@ -3,10 +3,10 @@ import random
 from pyrogram import filters
 from pyrogram.types import Message
 
-from PURVIMUSIC import app
-from PURVIMUSIC.misc import db
-from PURVIMUSIC.utils.decorators import AdminRightsCheck
-from PURVIMUSIC.utils.inline import close_markup
+from DISHA_QWEEN import app
+from DISHA_QWEEN.misc import db
+from DISHA_QWEEN.utils.decorators import AdminRightsCheck
+from DISHA_QWEEN.utils.inline import close_markup
 from config import BANNED_USERS
 
 
