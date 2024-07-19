@@ -3,10 +3,10 @@ from telegram import CallbackQuery
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from PURVIMUSIC import YouTube, app
-from PURVIMUSIC.core.call import PURVI
-from PURVIMUSIC.misc import SUDOERS, db
-from PURVIMUSIC.utils.database import (
+from DISHA_QWEEN import YouTube, app
+from DISHA_QWEEN.core.call import DISHA
+from DISHA_QWEEN.misc import SUDOERS, db
+from DISHA_QWEEN.utils.database import (
     get_active_chats,
     get_lang,
     get_upvote_count,
@@ -23,12 +23,12 @@ from pyrogram.errors import (
     UserAlreadyParticipant,
     UserNotParticipant,
 )
-from PURVIMUSIC.utils.database import get_assistant
-from PURVIMUSIC.utils.decorators.language import languageCB
-from PURVIMUSIC.utils.formatters import seconds_to_min
-from PURVIMUSIC.utils.inline import close_markup, stream_markup, stream_markup_timer
-from PURVIMUSIC.utils.stream.autoclear import auto_clean
-from PURVIMUSIC.utils.thumbnails import get_thumb
+from DISHA_QWEEN.utils.database import get_assistant
+from DISHA_QWEEN.utils.decorators.language import languageCB
+from DISHA_QWEEN.utils.formatters import seconds_to_min
+from DISHA_QWEEN.utils.inline import close_markup, stream_markup, stream_markup_timer
+from DISHA_QWEEN.utils.stream.autoclear import auto_clean
+from DISHA_QWEEN.utils.thumbnails import get_thumb
 from config import (
     BANNED_USERS,
     SOUNCLOUD_IMG_URL,
@@ -155,7 +155,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             return await CallbackQuery.answer(_["admin_1"], show_alert=True)
         await CallbackQuery.answer()
         await music_off(chat_id)
-        await PURVI.pause_stream(chat_id)
+        await DISHA.pause_stream(chat_id)
         await CallbackQuery.message.reply_text(
             _["admin_2"].format(mention), reply_markup=close_markup(_)
         )
@@ -164,13 +164,13 @@ async def del_back_playlist(client, CallbackQuery, _):
             return await CallbackQuery.answer(_["admin_3"], show_alert=True)
         await CallbackQuery.answer()
         await music_on(chat_id)
-        await PURVI.resume_stream(chat_id)
+        await DISHA.resume_stream(chat_id)
         await CallbackQuery.message.reply_text(
             _["admin_4"].format(mention), reply_markup=close_markup(_)
         )
     elif command == "Stop" or command == "End":
         await CallbackQuery.answer()
-        await PURVI.stop_stream(chat_id)
+        await DISHA.stop_stream(chat_id)
         await set_loop(chat_id, 0)
         await CallbackQuery.message.reply_text(
             _["admin_5"].format(mention), reply_markup=close_markup(_)
@@ -210,7 +210,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                         ),
                         reply_markup=close_markup(_),
                     )
-                    return await PURVI.stop_stream(chat_id)
+                    return await DISHA.stop_stream(chat_id)
                 except:
                     return
         else:
@@ -242,7 +242,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 image = None
             try:
-                await PURVI.skip_stream(chat_id, link, video=status, image=image)
+                await DISHA.skip_stream(chat_id, link, video=status, image=image)
             except:
                 return await CallbackQuery.message.reply_text(_["call_6"])
             button = stream_markup(_, chat_id)
@@ -278,7 +278,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             except:
                 image = None
             try:
-                await PURVI.skip_stream(chat_id, file_path, video=status, image=image)
+                await DISHA.skip_stream(chat_id, file_path, video=status, image=image)
             except:
                 return await mystic.edit_text(_["call_6"])
             button = stream_markup(_, chat_id)
@@ -299,7 +299,7 @@ async def del_back_playlist(client, CallbackQuery, _):
             await mystic.delete()
         elif "index_" in queued:
             try:
-                await PURVI.skip_stream(chat_id, videoid, video=status)
+                await DISHA.skip_stream(chat_id, videoid, video=status)
             except:
                 return await CallbackQuery.message.reply_text(_["call_6"])
             button = stream_markup(_, chat_id)
@@ -322,7 +322,7 @@ async def del_back_playlist(client, CallbackQuery, _):
                 except:
                     image = None
             try:
-                await PURVI.skip_stream(chat_id, queued, video=status, image=image)
+                await DISHA.skip_stream(chat_id, queued, video=status, image=image)
             except:
                 return await CallbackQuery.message.reply_text(_["call_6"])
             if videoid == "telegram":
