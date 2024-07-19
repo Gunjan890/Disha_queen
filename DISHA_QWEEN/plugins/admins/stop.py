@@ -1,11 +1,11 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from PURVIMUSIC import app
-from PURVIMUSIC.core.call import PURVI
-from PURVIMUSIC.utils.database import set_loop
-from PURVIMUSIC.utils.decorators import AdminRightsCheck
-from PURVIMUSIC.utils.inline import close_markup
+from DISHA_QWEEN import app
+from DISHA_QWEEN.core.call import DISHA
+from DISHA_QWEEN.utils.database import set_loop
+from DISHA_QWEEN.utils.decorators import AdminRightsCheck
+from DISHA_QWEEN.utils.inline import close_markup
 from config import BANNED_USERS
 
 
