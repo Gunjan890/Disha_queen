@@ -57,6 +57,6 @@ async def init():
     await userbot.stop()
     LOGGER("DISHA_QWEEN").info("STOP MUSIC BOT..")
 
-LOGGER("DISHA_QWEENC").info("STOP
+LOGGER("DISHA_QWEEN").info("STOP
 if __name__ == "__main__":
     asyncio.get_event_loop().run_until_complete(init())
