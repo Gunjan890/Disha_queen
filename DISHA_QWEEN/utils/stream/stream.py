@@ -5,15 +5,15 @@ from typing import Union
 from pyrogram.types import InlineKeyboardMarkup
 
 import config
-from PURVIMUSIC import Carbon, YouTube, app
-from PURVIMUSIC.core.call import PURVI
-from PURVIMUSIC.misc import db
-from PURVIMUSIC.utils.database import add_active_video_chat, is_active_chat
-from PURVIMUSIC.utils.exceptions import AssistantErr
-from PURVIMUSIC.utils.inline import aq_markup, close_markup, stream_markup
-from PURVIMUSIC.utils.pastebin import PURVIBin
-from PURVIMUSIC.utils.stream.queue import put_queue, put_queue_index
-from PURVIMUSIC.utils.thumbnails import get_thumb
+from DISHA_QWEEN import Carbon, YouTube, app
+from DISHA_QWEEN.core.call import DISHA
+from DISHA_QWEEN.misc import db
+from DISHA_QWEEN.utils.database import add_active_video_chat, is_active_chat
+from DISHA_QWEEN.utils.exceptions import AssistantErr
+from DISHA_QWEEN.utils.inline import aq_markup, close_markup, stream_markup
+from DISHA_QWEEN.utils.pastebin import PURVIBin
+from DISHA_QWEEN.utils.stream.queue import put_queue, put_queue_index
+from DISHA_QWEEN.utils.thumbnails import get_thumb
 
 
 async def stream(
@@ -32,7 +32,7 @@ async def stream(
     if not result:
         return
     if forceplay:
-        await PURVI.force_stop_stream(chat_id)
+        await DISHA.force_stop_stream(chat_id)
     if streamtype == "playlist":
         msg = f"{_['play_19']}\n\n"
         count = 0
@@ -165,7 +165,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await PURVI.join_call(
+            await DISHA.join_call(
                 chat_id,
                 original_chat_id,
                 file_path,
@@ -225,7 +225,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await PURVI.join_call(chat_id, original_chat_id, file_path, video=None)
+            await DISHA.join_call(chat_id, original_chat_id, file_path, video=None)
             await put_queue(
                 chat_id,
                 original_chat_id,
@@ -277,7 +277,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await PURVI.join_call(chat_id, original_chat_id, file_path, video=status)
+            await DISHA.join_call(chat_id, original_chat_id, file_path, video=status)
             await put_queue(
                 chat_id,
                 original_chat_id,
@@ -391,7 +391,7 @@ async def stream(
         else:
             if not forceplay:
                 db[chat_id] = []
-            await PURVI.join_call(
+            await DISHA.join_call(
                 chat_id,
                 original_chat_id,
                 link,
