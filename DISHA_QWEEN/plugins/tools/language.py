@@ -2,9 +2,9 @@ from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, Message
 
-from PURVIMUSIC import app
-from PURVIMUSIC.utils.database import get_lang, set_lang
-from PURVIMUSIC.utils.decorators import ActualAdminCB, language, languageCB
+from DISHA_QWEEN import app
+from DISHA_QWEEN.utils.database import get_lang, set_lang
+from DISHA_QWEEN.utils.decorators import ActualAdminCB, language, languageCB
 from config import BANNED_USERS
 from strings import get_string, languages_present
 
