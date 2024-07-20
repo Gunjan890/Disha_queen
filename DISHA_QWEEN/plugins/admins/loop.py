@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from DISHA_QWEEN import app
-from DISHA_QWEENutils.database import get_loop, set_loop
+from DISHA_QWEEN.utils.database import get_loop, set_loop
 from DISHA_QWEEN.utils.decorators import AdminRightsCheck
 from DISHA_QWEEN.utils.inline import close_markup
 from config import BANNED_USERS
