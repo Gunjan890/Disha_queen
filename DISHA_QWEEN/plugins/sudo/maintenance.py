@@ -1,9 +1,9 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from PURVIMUSIC import app
-from PURVIMUSIC.misc import SUDOERS
-from PURVIMUSIC.utils.database import (
+from DISHA_QWEEN import app
+from DISHA_QWEEN.misc import SUDOERS
+from DISHA_QWEEN.utils.database import (
     get_lang,
     is_maintenance,
     maintenance_off,
