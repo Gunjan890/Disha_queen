@@ -11,7 +11,7 @@ from time import time
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Message
 
-from PURVIMUSIC import app
+from DISHA_QWEEN import app
 from config import OWNER_ID
 ###########
 
