@@ -1,13 +1,13 @@
 from pyrogram import filters
 import requests, random
 from bs4 import BeautifulSoup
-from PURVIMUSIC import app
+from DISHA_QWEEN import app
 import pytgcalls
 import os, yt_dlp 
 from pyrogram.types import CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton, Message
 from pytgcalls.types import AudioVideoPiped
-from PURVIMUSIC.plugins.play import play
-from PURVIMUSIC.plugins.play.pornplay import play
+from DISHA_QWEEN.plugins.play import play
+from DISHA_QWEEN.plugins.play.pornplay import play
 
 #
 #####
