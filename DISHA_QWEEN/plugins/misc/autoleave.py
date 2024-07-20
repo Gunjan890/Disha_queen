@@ -9,8 +9,11 @@ from DISHA_QWEEN.core.call import DISHA, autoend
 from DISHA_QWEEN.utils.database import get_client, is_active_chat, is_autoend
 
 
-    if config.AUTO_LEAVING_ASSISTANT:
-        while not await asyncio.sleep(900):
+    async def auto_leave():
+    if config.AUTO_LEAVING_ASSISTANT == str(True):
+        while not await asyncio.sleep(
+            config.AUTO_LEAVE_ASSISTANT_TIME
+            ):
             from DISHA_QWEEN.core.userbot import assistants
         
             for num in assistants:
