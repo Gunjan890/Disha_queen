@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from DISHA_QWEEN import app
-from DISHA_QWEENC.core.call import PURVI
+from DISHA_QWEENC.core.call import DISHA
 from DISHA_QWEEN.misc import SUDOERS, db
 from DISHA_QWEEN.utils import AdminRightsCheck
 from DISHA_QWEEN.utils.database import is_active_chat, is_nonadmin_chat
