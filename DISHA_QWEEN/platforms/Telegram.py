@@ -6,8 +6,8 @@ from typing import Union
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, Voice
 
 import config
-from PURVIMUSIC import app
-from PURVIMUSIC.utils.formatters import (
+from DISHA_QWEEN import app
+from DISHA_QWEEN.utils.formatters import (
     check_duration,
     convert_bytes,
     get_readable_time,
