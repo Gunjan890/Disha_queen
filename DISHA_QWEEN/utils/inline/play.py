@@ -1,8 +1,8 @@
 import math
 from pyrogram.types import InlineKeyboardButton
-from PURVIMUSIC import app
+from DISHA_QWEEN import app
 import config
-from PURVIMUSIC.utils.formatters import time_to_seconds
+from DISHA_QWEEN.utils.formatters import time_to_seconds
 
 
 def track_markup(_, videoid, user_id, channel, fplay):
@@ -71,7 +71,7 @@ def stream_markup_timer(_, chat_id, played, dur):
                 text="𝖮ᴡɴᴇʀ 🥀", url="https://t.me/apna_gunjan",
             ),
             InlineKeyboardButton(
-                text="𝖲ᴜᴘᴘᴏʀᴛ 🥀", url="https://t.me/+w7AkoVyIO443M2Fl",
+                text="𝖲ᴜᴘᴘᴏʀᴛ 🥀", url="https://t.me/+lGwpQNrD8qdiNmRl",
             )
         ],
          [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
@@ -93,7 +93,7 @@ def stream_markup(_, chat_id):
                 text="𝖮𝗐𝗇𝖾𝗋🥀", url="https://t.me/@apna_gunjan",
             ),
             InlineKeyboardButton(
-                text="𝖲𝗎𝗉𝗉𝗈𝗋𝗍🥀", url="https://t.me/+w7AkoVyIO443M2Fl",
+                text="𝖲𝗎𝗉𝗉𝗈𝗋𝗍🥀", url="https://t.me/+lGwpQNrD8qdiNmRl",
             )
         ],
         [InlineKeyboardButton(text=_["CLOSE_BUTTON"], callback_data="close")],
