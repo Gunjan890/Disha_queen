@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from DISHA_QWEEN import YouTube, app
-from DISHA_QWEEN.core.call import DISHA
+from DISHA_QWEEN.core.call import PURVI
 from DISHA_QWEEN.misc import db
 from DISHA_QWEEN.utils import AdminRightsCheck, seconds_to_min
 from DISHA_QWEEN.utils.inline import close_markup
