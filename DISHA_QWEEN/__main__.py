@@ -5,11 +5,11 @@ from pyrogram import idle
 from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
-from PURVIMUSIC import LOGGER, app, userbot
-from PURVIMUSIC.core.call import PURVI
-from PURVIMUSIC.misc import sudo
-from PURVIMUSIC.plugins import ALL_MODULES
-from PURVIMUSIC.utils.database import get_banned_users, get_gbanned
+from DISHA_QWEEN import LOGGER, app, userbot
+from DISHA_QWEEN.core.call import PURVI
+from DISHA_QWEEN.misc import sudo
+from DISHA_QWEEN.plugins import ALL_MODULES
+from DISHA_QWEEN.utils.database import get_banned_users, get_gbanned
 from config import BANNED_USERS
 
 
