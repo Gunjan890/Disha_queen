@@ -1,11 +1,11 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from PURVIMUSIC import app
-from PURVIMUSIC.misc import SUDOERS
-from PURVIMUSIC.utils.database import add_gban_user, remove_gban_user
-from PURVIMUSIC.utils.decorators.language import language
-from PURVIMUSIC.utils.extraction import extract_user
+from DISHA_QWEEN import app
+from DISHA_QWEEN.misc import SUDOERS
+from DISHA_QWEEN.utils.database import add_gban_user, remove_gban_user
+from DISHA_QWEEN.utils.decorators.language import language
+from DISHA_QWEEN.utils.extraction import extract_user
 from config import BANNED_USERS
 
 
