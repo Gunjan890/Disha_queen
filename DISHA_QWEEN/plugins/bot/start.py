@@ -7,12 +7,12 @@ from youtubesearchpython.__future__ import VideosSearch
 
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, InputMediaPhoto
 import config
-from PURVIMUSIC import app
-from PURVIMUSIC.misc import _boot_
-from PURVIMUSIC.plugins.sudo.sudoers import sudoers_list
-from PURVIMUSIC.utils.database import get_served_chats, get_served_users, get_sudoers
-from PURVIMUSIC.utils import bot_sys_stats
-from PURVIMUSIC.utils.database import (
+from DISHA_QWEEN import app
+from DISHA_QWEEN.misc import _boot_
+from DISHA_QWEEN.plugins.sudo.sudoers import sudoers_list
+from DISHA_QWEEN.utils.database import get_served_chats, get_served_users, get_sudoers
+from DISHA_QWEEN.utils import bot_sys_stats
+from DISHA_QWEEN.utils.database import (
     add_served_chat,
     add_served_user,
     blacklisted_chats,
@@ -20,22 +20,16 @@ from PURVIMUSIC.utils.database import (
     is_banned_user,
     is_on_off,
 )
-from PURVIMUSIC.utils.decorators.language import LanguageStart
-from PURVIMUSIC.utils.formatters import get_readable_time
-from PURVIMUSIC.utils.inline import help_pannel, private_panel, start_panel
+from DISHA_QWEEN.utils.decorators.language import LanguageStart
+from DISHA_QWEEN.utils.formatters import get_readable_time
+from DISHA_QWEEN.utils.inline import help_pannel, private_panel, start_panel
 from config import BANNED_USERS
 from strings import get_string
 
 #--------------------------
 
 NEXI_VID = [
-"https://telegra.ph/file/1a3c152717eb9d2e94dc2.mp4",
-"https://graph.org/file/ba7699c28dab379b518ca.mp4",
-"https://graph.org/file/83ebf52e8bbf138620de7.mp4",
-"https://graph.org/file/82fd67aa56eb1b299e08d.mp4",
-"https://graph.org/file/318eac81e3d4667edcb77.mp4",
-"https://graph.org/file/7c1aa59649fbf3ab422da.mp4",
-"https://graph.org/file/2a7f857f31b32766ac6fc.mp4",
+"https://graph.org/file/94918b340445db8a72c02.jpg",
 
 ]
 
