@@ -6,7 +6,7 @@ from pytgcalls.exceptions import NoActiveGroupCall
 
 import config
 from DISHA_QWEEN import LOGGER, app, userbot
-from DISHA_QWEEN.core.call import DISHA_QWEEN
+from DISHA_QWEEN.core.call import PURVI
 from DISHA_QWEEN.misc import sudo
 from DISHA_QWEEN.plugins import ALL_MODULES
 from DISHA_QWEEN.utils.database import get_banned_users, get_gbanned
