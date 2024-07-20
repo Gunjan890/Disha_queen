@@ -4,7 +4,7 @@ from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 from DISHA_QWEEN import YouTube, app
-from DISHA_QWEEN.core.call import DISHA
+from DISHA_QWEEN.core.call import PURVI
 from DISHA_QWEEN.misc import SUDOERS, db
 from DISHA_QWEEN.utils.database import (
     get_active_chats,
