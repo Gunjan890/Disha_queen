@@ -38,7 +38,7 @@ async def init():
         importlib.import_module("DISHA_QWEEN.plugins" + all_module)
     LOGGER("DISHA_QWEEN.plugins").info("𝐀𝐥𝐥 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬 𝐋𝐨𝐚𝐝𝐞𝐝 𝐁𝐚𝐛𝐲🥳...")
     await userbot.start()
-    await DISHAI.start()
+    await DISHA.start()
     try:
         await DISHA.stream_call("https://graph.org/file/ea61cc8f836487f6e909c.jpg")
     except NoActiveGroupCall:
