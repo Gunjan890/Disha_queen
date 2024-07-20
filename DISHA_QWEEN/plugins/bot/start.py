@@ -28,7 +28,7 @@ from strings import get_string
 
 #--------------------------
 
-NEXI_VID = [
+PING_IMG_URL = [
 "https://graph.org/file/94918b340445db8a72c02.jpg",
 
 ]
