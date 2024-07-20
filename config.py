@@ -53,7 +53,7 @@ HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 # ----------------------------------------------------------------
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/Gunjan890/disha",
+    "https://github.com/Gunjan890/Disha_queen",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "main")
 GIT_TOKEN = getenv(
@@ -67,8 +67,8 @@ GIT_TOKEN = getenv(
 
 # ------------------------------------------------------------------------
 # -------------------------------------------------------------------------
-SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/+w7AkoVyIO443M2Fl")
-SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+w7AkoVyIO443M2Fl")
+SUPPORT_CHANNEL = getenv("SUPPORT_CHANNEL", "https://t.me/+lGwpQNrD8qdiNmRl")
+SUPPORT_CHAT = getenv("SUPPORT_CHAT", "https://t.me/+lGwpQNrD8qdiNmRl")
 # ------------------------------------------------------------------------------
 # -------------------------------------------------------------------------------
 
