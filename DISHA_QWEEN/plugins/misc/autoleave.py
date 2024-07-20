@@ -4,18 +4,16 @@ from datetime import datetime
 from pyrogram.enums import ChatType
 
 import config
-from PURVIMUSIC import app
-from PURVIMUSIC.core.call import PURVI, autoend
-from PURVIMUSIC.utils.database import get_client, is_active_chat, is_autoend
+from DISHA_QWEEN import app
+from DISHA_QWEEN.core.call import DISHA, autoend
+from DISHA_QWEEN.utils.database import get_client, is_active_chat, is_autoend
 
 
-async def auto_leave():
-    if config.AUTO_LEAVING_ASSISTANT == str(True):
-        while not await asyncio.sleep(
-            config.AUTO_LEAVE_ASSISTANT_TIME
-        ):
-            from PURVIMUSIC.core.userbot import assistants
-
+ async def auto_leave():
+    if config.AUTO_LEAVING_ASSISTANT:
+        while not await asyncio.sleep(900):
+            from DISHA_QWEEN.core.userbot import assistants
+        
             for num in assistants:
                 client = await get_client(num)
                 left = 0
@@ -30,7 +28,7 @@ async def auto_leave():
                             chat_id = i.chat.id
                             if (
                                 chat_id != config.LOGGER_ID
-                                and i.chat.id != -1001919135283
+                                and i.chat.id != -1001686672798
                                 and i.chat.id != -1001841879487
                             ):
                                 if left == 20:
@@ -64,7 +62,7 @@ async def auto_end():
                     continue
                 autoend[chat_id] = {}
                 try:
-                    await PURVI.stop_stream(chat_id)
+                    await Disha.stop_stream(chat_id)
                 except:
                     continue
                 try:
