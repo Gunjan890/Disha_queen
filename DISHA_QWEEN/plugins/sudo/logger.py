@@ -1,9 +1,9 @@
 from pyrogram import filters
 
-from PURVIMUSIC import app
-from PURVIMUSIC.misc import SUDOERS
-from PURVIMUSIC.utils.database import add_off, add_on
-from PURVIMUSIC.utils.decorators.language import language
+from DISHA_QWEEN import app
+from DISHA_QWEEN.misc import SUDOERS
+from DISHA_QWEEN.utils.database import add_off, add_on
+from DISHA_QWEEN.utils.decorators.language import language
 
 
 @app.on_message(filters.command(["logger"]) & SUDOERS)
