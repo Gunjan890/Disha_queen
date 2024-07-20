@@ -9,7 +9,6 @@ from DISHA_QWEEN.core.call import DISHA, autoend
 from DISHA_QWEEN.utils.database import get_client, is_active_chat, is_autoend
 
 
- async def auto_leave():
     if config.AUTO_LEAVING_ASSISTANT:
         while not await asyncio.sleep(900):
             from DISHA_QWEEN.core.userbot import assistants
