@@ -1,9 +1,9 @@
 from pyrogram.enums import ChatType
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
-from PURVIMUSIC import app
-from PURVIMUSIC.misc import SUDOERS, db
-from PURVIMUSIC.utils.database import (
+from DISHA_QWEEN import app
+from DISHA_QWEEN.misc import SUDOERS, db
+from DISHA_QWEEN.utils.database import (
     get_authuser_names,
     get_cmode,
     get_lang,
@@ -16,7 +16,7 @@ from PURVIMUSIC.utils.database import (
 from config import SUPPORT_CHAT, adminlist, confirmer
 from strings import get_string
 
-from ..formatters import int_to_alpha
+from ..formatters import int_to_gunjan
 
 
 def AdminRightsCheck(mystic):
@@ -44,7 +44,7 @@ def AdminRightsCheck(mystic):
                     [
                         InlineKeyboardButton(
                             text="ʜᴏᴡ ᴛᴏ ғɪx ?",
-                            callback_data="PURVImousAdmin",
+                            callback_data="DISHAmousAdmin",
                         ),
                     ]
                 ]
@@ -140,7 +140,7 @@ def AdminActual(mystic):
                     [
                         InlineKeyboardButton(
                             text="ʜᴏᴡ ᴛᴏ ғɪx ?",
-                            callback_data="PURVImousAdmin",
+                            callback_data="DISHAmousAdmin",
                         ),
                     ]
                 ]
