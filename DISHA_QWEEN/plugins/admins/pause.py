@@ -2,7 +2,7 @@ from pyrogram import filters
 from pyrogram.types import Message
 
 from DISHA_QWEEN import app
-from DISHA_QWEEN.core.call import DISHA
+from DISHA_QWEEN.core.call import PURVI
 from DISHA_QWEEN.utils.database import is_music_playing, music_off
 from DISHA_QWEEN.utils.decorators import AdminRightsCheck
 from DISHA_QWEEN.utils.inline import close_markup
