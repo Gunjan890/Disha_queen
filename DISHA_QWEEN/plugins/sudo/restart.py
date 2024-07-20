@@ -10,15 +10,15 @@ from git.exc import GitCommandError, InvalidGitRepositoryError
 from pyrogram import filters
 
 import config
-from PURVIMUSIC import app
-from PURVIMUSIC.misc import HAPP, SUDOERS, XCB
-from PURVIMUSIC.utils.database import (
+from DISHA_QWEEN import app
+from DISHA_QWEEN.misc import HAPP, SUDOERS, XCB
+from DISHA_QWEEN.utils.database import (
     get_active_chats,
     remove_active_chat,
     remove_active_video_chat,
 )
-from PURVIMUSIC.utils.decorators.language import language
-from PURVIMUSIC.utils.pastebin import PURVIBin
+from DISHA_QWEEN.utils.decorators.language import language
+from DISHA_QWEEN.utils.pastebin import DISHABin
 
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
