@@ -2,9 +2,9 @@ from pyrogram import filters
 from pyrogram.enums import ChatMembersFilter, ChatMemberStatus, ChatType
 from pyrogram.types import Message
 
-from PURVIMUSIC import app
-from PURVIMUSIC.utils.database import set_cmode
-from PURVIMUSIC.utils.decorators.admins import AdminActual
+from DISHA_QWEEN import app
+from DISHA_QWEEN.utils.database import set_cmode
+from DISHA_QWEEN.utils.decorators.admins import AdminActual
 from config import BANNED_USERS
 
 
