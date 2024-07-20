@@ -1,6 +1,6 @@
 from typing import Union
-from PURVIMUSIC import app
-from PURVIMUSIC.utils.formatters import time_to_seconds
+from DISHA_QWEEN import app
+from DISHA_QWEEN.utils.formatters import time_to_seconds
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup
 
 
