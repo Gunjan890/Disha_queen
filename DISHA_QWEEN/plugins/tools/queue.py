@@ -6,12 +6,12 @@ from pyrogram.errors import FloodWait
 from pyrogram.types import CallbackQuery, InputMediaPhoto, Message
 
 import config
-from PURVIMUSIC import app
-from PURVIMUSIC.misc import db
-from PURVIMUSIC.utils import PURVIBin, get_channeplayCB, seconds_to_min
-from PURVIMUSIC.utils.database import get_cmode, is_active_chat, is_music_playing
-from PURVIMUSIC.utils.decorators.language import language, languageCB
-from PURVIMUSIC.utils.inline import queue_back_markup, queue_markup
+from DISHA_QWEEN import app
+from DISHA_QWEEN.misc import db
+from DISHA_QWEEN.utils import DISHABin, get_channeplayCB, seconds_to_min
+from DISHA_QWEEN.utils.database import get_cmode, is_active_chat, is_music_playing
+from DISHA_QWEEN.utils.decorators.language import language, languageCB
+from DISHA_QWEEN.utils.inline import queue_back_markup, queue_markup
 from config import BANNED_USERS
 
 basic = {}
