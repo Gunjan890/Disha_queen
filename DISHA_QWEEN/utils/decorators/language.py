@@ -1,5 +1,5 @@
-from PURVIMUSIC.misc import SUDOERS
-from PURVIMUSIC.utils.database import get_lang, is_maintenance
+from DISHA_QWEEN.misc import SUDOERS
+from DISHA_QWEEN.utils.database import get_lang, is_maintenance
 from strings import get_string
 
 
