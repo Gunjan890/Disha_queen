@@ -3,7 +3,7 @@ from pyrogram.types import InlineKeyboardMarkup, Message
 
 import config
 from DISHA_QWEEN import YouTube, app
-from DISHA_QWEEN.core.call import DISHA
+from DISHA_QWEEN.core.call import PURVI
 from DISHA_QWEEN.misc import db
 from DISHA_QWEEN.utils.database import get_loop
 from DISHA_QWEEN.utils.decorators import AdminRightsCheck
