@@ -35,10 +35,10 @@ async def init():
         pass
     await app.start()
     for all_module in ALL_MODULES:
-        importlib.import_module("DISHA_QWEEN.plugins" + all_module)
-    LOGGER("DISHA_QWEEN.plugins").info("𝐀𝐥𝐥 𝐅𝐞𝐚𝐭𝐮𝐫𝐞𝐬 𝐋𝐨𝐚𝐝𝐞𝐝 𝐁𝐚𝐛𝐲🥳...")
+        importlib.import_module("SlayerX.plugins" + all_module)
+    LOGGER("SlayerX.plugins").info("Successfully Imported Modules...")
     await userbot.start()
-    await DISHA.start()
+    await Slayer.start()
     try:
         await DISHA.stream_call("https://graph.org/file/ea61cc8f836487f6e909c.jpg")
     except NoActiveGroupCall:
