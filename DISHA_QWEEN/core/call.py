@@ -35,7 +35,7 @@ from DISHA_QWEEN.utils.exceptions import AssistantErr
 from DISHA_QWEEN.utils.formatters import check_duration, seconds_to_min, speed_converter
 from DISHA_QWEEN.utils.inline.play import stream_markup
 from DISHA_QWEEN.utils.stream.autoclear import auto_clean
-from DISHA_QWEENC.utils.thumbnails import get_thumb
+from DISHA_QWEEN.utils.thumbnails import get_thumb
 from strings import get_string
 
 autoend = {}
